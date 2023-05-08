@@ -1,13 +1,94 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>skill </title>
+	<title>3-Page Layout Example</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			height: 100vh;
+			border-left: 5px solid #30D5C8 ;
+			border-right: 5px solid #30D5C8 ;
+		}
+
+		.col {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			border-top: 5px solid #30D5C8 ;
+			border-bottom: 5px solid #30D5C8 ;
+			background-color: #e9d8c5;
+			padding: 20px;
+		}
+
+		.col:first-child {
+			border-left: none;
+		}
+
+		.col:last-child {
+			border-right: none;
+		}
+
+		.header {
+			background-color: #F0FFFF;
+			border-bottom: 2px dashed #997b66;
+			padding: 20px;
+		}
+
+		.main {
+			flex: 1;
+		}
+
+		.footer {
+			background-color: #F0FFFF;
+			border-top: 2px dashed #997b66;
+			padding: 20px;
+		}
+	</style>
 </head>
 <body>
-<p>DevOps is the combination of cultural philosophies, practices, and tools that increases an 
-organization's ability to deliver applications and services at high velocity: evolving and improving
- products at a faster pace than organizations using traditional software development and infrastructure
- management processes</p>
+	<div class="container">
+		<div class="col">
+			<div class="header">
+				<h1>DevOps</h1>
+				<p>evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.</p>
+			</div>
+			<div class="main">
+				<h2 style = "font-size:140%;">Methodology in the software development and IT industry. Used as a set of practices and tools, DevOps integrates and automates the work of software development and IT operations as a means for improving and shortening the systems development life cycle</h2>
+			</div>
+			<div class="footer">
+				<p>Thanks for visiting page </p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="header">
+				<h1>DevOps tool 2</h1>
+				<p>DevOps testing tools are designed to help software development and delivery teams test their code more effectively</p>
+			</div>
+			<div class="main">
+				<h2 style = "font-size:140%;">Coding and scripting are two of the most important skills for anyone working in DevOps. Without these skills, you'll be unable to automate tasks or work with code repositories.</h2>
+			</div>
+			<div class="footer">
+				<p>Thanks for visiting page </p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="header">
+				<h1>7Cs of DevOps </h1>
+				<p>Continuous (Planning, Development, Integration, Deployment, Testing, Delivery & Monitoring, and Feedback​)</p>
+			</div>
+			<div class="main">
+				<h2 style = "font-size:140%;"> Python, Ruby, Python, Java, Javascript, PHP, Bash, Shell and Node. js are among the most recommended programming/scripting languages. Linux is one of the operating environments that hardcore developers continue to use even to this day</h2>
+			</div>
+			<div class="footer">
+				<p>Thanks for visiting page </p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
-
-
